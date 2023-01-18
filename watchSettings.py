@@ -57,6 +57,17 @@ def languageFunc():
 
     return language
 
+
+# option 3 -------------------------------
+def transparencyFunc():
+    level = int(input ("Enter from 0 to 100 to select transparency (0-transparent): "))
+    while level > 100 or level < 0:
+        print ("Not a valid option")
+        level = int(input ("Enter from 0 to 100 to select transparency: "))
+
+    return level
+
+
 # Main Program ===========================
 
 choice = 1
