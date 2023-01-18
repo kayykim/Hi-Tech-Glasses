@@ -35,7 +35,27 @@ def displayFunc():
         return ("Sign Language")
     else:
         return ("Text")
+    
+    
+# option 2 -------------------------------
+def languageFunc():
 
+    # show options 
+    options = ("english", "spanish", "french", "mandarin", "urdu", "korean")
+    print ("Select a language: ")
+
+    # user input
+    language = input (options)
+    language = language.lower()
+
+    while language not in options:
+        print ("That is not an option")
+        print()
+        print ("Select a language: ")
+        language = input (options)
+        language = language.lower()
+
+    return language
 
 # Main Program ===========================
 
@@ -47,6 +67,10 @@ while choice != 6:
 
     if choice == 1:
         display = (displayFunc())
+        print ("saved")
+    
+    elif choice == 2:
+        language = (languageFunc())
         print ("saved")
 
 
