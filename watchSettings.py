@@ -83,5 +83,8 @@ while choice != 6:
     elif choice == 2:
         language = (languageFunc())
         print ("saved")
-
+        
+    elif choice == 3:
+        transparency = transparencyFunc()
+        print ("saved")
 
