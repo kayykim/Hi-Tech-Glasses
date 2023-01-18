@@ -1,6 +1,13 @@
-import time
+# Name: Kay Kim
 
-#introduction
+# default settings
+display = "sign language"
+language = "english"
+transparency = 60
+colour = "black"
+volume = 60
+
+# introduction -------------------------------
 def menu ():
     print ()
     print ("Settings")
@@ -12,7 +19,11 @@ def menu ():
     print ("Enter 5: Change speaker volume")
     print ("Enter 6: Exit")
 
-def display():
+    
+# option 1 -------------------------------
+def displayFunc():
+    
+    # user input
     print ("Would you like to view with")
     display = int (input("Sign Language (1) or Text? (2) "))
 
@@ -26,42 +37,16 @@ def display():
         return ("Text")
 
 
-# Main Program 
-menu ()
+# Main Program ===========================
 
-# input from user
-choice = int(input("Option: "))
-
-    # error checking
-while choice > 6 or choice < 0:
-    print ("Please enter a valid option")
-    choice = int(input("Option: "))
-    print ("Your settings have been adjusted")
+choice = 1
 
 while choice != 6:
-    if choice == 1:
-        print (display())
-
-    time.sleep(1)
-    menu()
+    menu ()
     choice = int(input("Option: "))
 
-
-print ("You've exited settings")
-    
-    elif choice == 1:
-        print ("Would you like to view with")
-        display = int (input("Sign Language (1) or Text? (2) "))
-
-    elif choice == 2:
-        print ("Select a language: ")
-        language = input ("English, Spanish, French, Mandarin, Urdu, Korean ")
-        language = language.lower()
-        print ("Your settings have been adjusted.")
-    
-    time.sleep(1)
-    menu()
-    choice = int (input(""))
+    if choice == 1:
+        display = (displayFunc())
+        print ("saved")
 
 
-print ("You have exited Settings.")
