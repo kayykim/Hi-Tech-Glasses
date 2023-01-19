@@ -66,6 +66,27 @@ def transparencyFunc():
         level = int(input ("Enter from 0 to 100 to select transparency: "))
 
     return level
+    
+    
+# option 4 -------------------------------
+def colourFunc():
+
+    # show colour
+    choices = ("red", "orange", "yellow", "green", "blue", "purple", "black")
+    print (choices)
+
+    # user input
+    option = input ("Select a colour: ")
+    option = option.lower()
+
+    while option not in choices:
+        print ("That is not an option")
+        print()
+        print ("Select a colour: ")
+        option = input (choices)
+        option = choices.lower()
+
+    return option
 
 
 # Main Program ===========================
