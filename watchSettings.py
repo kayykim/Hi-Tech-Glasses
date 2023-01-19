@@ -108,4 +108,8 @@ while choice != 6:
     elif choice == 3:
         transparency = transparencyFunc()
         print ("saved")
+       
+    elif choice == 4:
+        colour = colourFunc()
+        print ("saved")
 
