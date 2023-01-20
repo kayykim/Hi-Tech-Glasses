@@ -89,6 +89,19 @@ def colourFunc():
     return option
 
 
+# option 5 -------------------------------
+def volumeFunc():
+
+    # user input
+    level = int(input ("Enter from 0 to 100 to select volume (0-mute): "))
+    while level > 100 or level < 0:
+        print ("Not a valid option")
+        level = int(input ("Enter from 0 to 100 to select volume: "))
+        print ("saved")
+
+    return level
+
+
 # Main Program ===========================
 
 choice = 1
