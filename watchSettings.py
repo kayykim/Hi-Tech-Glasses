@@ -125,4 +125,8 @@ while choice != 6:
     elif choice == 4:
         colour = colourFunc()
         print ("saved")
+        
+    elif choice == 5:
+        volume = volumeFunc()
+        print ("saved")
 
