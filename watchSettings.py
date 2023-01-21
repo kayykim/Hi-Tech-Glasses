@@ -129,4 +129,7 @@ while choice != 6:
     elif choice == 5:
         volume = volumeFunc()
         print ("saved")
+        
+    else: 
+        break
 
