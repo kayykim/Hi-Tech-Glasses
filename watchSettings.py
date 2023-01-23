@@ -133,3 +133,4 @@ while choice != 6:
     else: 
         break
 
+print ("Your settings have been adjusted to: ")
