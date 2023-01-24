@@ -134,3 +134,5 @@ while choice != 6:
         break
 
 print ("Your settings have been adjusted to: ")
+print ("Display: ", display)
+
