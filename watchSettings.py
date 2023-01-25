@@ -137,4 +137,5 @@ print ("Your settings have been adjusted to: ")
 print ("Display: ", display)
 print ("Language: ", language)
 print ("Transparency: ", transparency)
+print ("Personalization: ", colour)
 
