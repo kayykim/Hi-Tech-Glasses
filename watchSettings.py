@@ -138,4 +138,6 @@ print ("Display: ", display)
 print ("Language: ", language)
 print ("Transparency: ", transparency)
 print ("Personalization: ", colour)
+print ("Speaker volume: ", volume)
+
 
